@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full py-24 bg-[#f8f9fc] overflow-hidden font-sans">
+  <section class="relative w-full py-24 bg-[#EEEFFB] overflow-hidden font-sans">
     <!-- Background subtle glows -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] bg-indigo-500/5 blur-[120px] rounded-full pointer-events-none"></div>
 

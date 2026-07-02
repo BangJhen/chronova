@@ -8,7 +8,7 @@
           <img src="/logo.png" alt="Chronova Logo" class="h-10 w-auto" />
         </NuxtLink>
         <p class="text-slate-500 mb-6 leading-relaxed max-w-sm">
-          Plan smarter, move faster. Chronova adalah AI-powered Kanban scheduler yang dirancang untuk menyederhanakan alur kerja dan mengubah ide menjadi tugas terstruktur.
+          Plan smarter, move faster. Chronova is the AI-powered Kanban scheduler designed to streamline your workflow effortlessly.
         </p>
         <div class="flex items-center gap-4">
           <!-- Social Icons -->
@@ -26,23 +26,23 @@
 
       <!-- Product Links -->
       <div>
-        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-sm">Produk</h4>
+        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-sm">Product</h4>
         <ul class="space-y-3.5 text-sm text-slate-500">
-          <li><a href="#" class="hover:text-indigo-600 transition-colors">Fitur</a></li>
-          <li><a href="#" class="hover:text-indigo-600 transition-colors">Harga</a></li>
-          <li><a href="#" class="hover:text-indigo-600 transition-colors">Integrasi</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition-colors">Features</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition-colors">Pricing</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition-colors">Integrations</a></li>
           <li><a href="#" class="hover:text-indigo-600 transition-colors">Changelog</a></li>
         </ul>
       </div>
 
       <!-- Company Links -->
       <div>
-        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-sm">Perusahaan</h4>
+        <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-sm">Company</h4>
         <ul class="space-y-3.5 text-sm text-slate-500">
-          <li><a href="#" class="hover:text-indigo-600 transition-colors">Tentang Kami</a></li>
-          <li><a href="#" class="hover:text-indigo-600 transition-colors">Karir</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition-colors">About Us</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition-colors">Careers</a></li>
           <li><a href="#" class="hover:text-indigo-600 transition-colors">Blog</a></li>
-          <li><a href="#" class="hover:text-indigo-600 transition-colors">Hubungi Kami</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition-colors">Contact Us</a></li>
         </ul>
       </div>
 
@@ -50,9 +50,9 @@
       <div>
         <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-sm">Legal</h4>
         <ul class="space-y-3.5 text-sm text-slate-500">
-          <li><a href="#" class="hover:text-indigo-600 transition-colors">Syarat & Ketentuan</a></li>
-          <li><a href="#" class="hover:text-indigo-600 transition-colors">Kebijakan Privasi</a></li>
-          <li><a href="#" class="hover:text-indigo-600 transition-colors">Kebijakan Cookie</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition-colors">Terms of Service</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition-colors">Cookie Policy</a></li>
         </ul>
       </div>
 
@@ -61,7 +61,7 @@
     <!-- Bottom Bar -->
     <div class="max-w-6xl mx-auto mt-16 pt-8 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-sm text-slate-400">
-        &copy; {{ new Date().getFullYear() }} Chronova Inc. Hak cipta dilindungi.
+        &copy; {{ new Date().getFullYear() }} Chronova Inc. All rights reserved.
       </p>
       <div class="flex items-center gap-6 text-sm text-slate-400">
         <span class="flex items-center gap-1.5">
@@ -69,7 +69,7 @@
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
           </span>
-          Semua sistem normal
+          All systems normal
         </span>
       </div>
     </div>

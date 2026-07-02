@@ -5,15 +5,14 @@
     <div class="flex flex-col items-center text-center mb-16">
       <!-- Badge -->
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-100 bg-white/50 backdrop-blur-md mb-6 shadow-sm">
-        <svg class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-          <path d="M12 2L15 9l7 3-7 3-3 7-3-7-7-3 7-3z" fill="currentColor" class="text-indigo-200" stroke="none" />
+        <svg class="w-4 h-4 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l2.4 7.6 7.6 2.4-7.6 2.4L12 22l-2.4-7.6-7.6-2.4 7.6-2.4L12 2z"/>
         </svg>
         <span class="text-xs font-bold tracking-wider text-indigo-800 uppercase">How It Works</span>
       </div>
       
       <!-- Headline -->
-      <h2 class="text-4xl md:text-5xl font-extrabold text-slate-800 tracking-tight mb-4">
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-800 tracking-tight mb-4">
         Get started in <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">4 simple steps</span>
       </h2>
       
@@ -89,7 +88,7 @@
       </div>
 
       <!-- Right Column: Step Detail UI Mockup -->
-      <div class="flex-grow relative mt-4 lg:mt-0">
+      <div class="w-full flex-1 min-w-0 relative mt-4 lg:mt-0">
         <!-- Main Glass Panel -->
         <div class="w-full h-full bg-white/30 backdrop-blur-xl rounded-[2.5rem] border border-white/60 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] p-8 lg:p-12 relative overflow-hidden">
           
@@ -100,8 +99,11 @@
           <div class="relative z-10 h-full flex flex-col">
             <!-- Header of Step -->
             <div class="mb-10 transition-all duration-300">
-              <div class="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50/80 border border-indigo-100 text-[10px] font-bold text-indigo-600 tracking-wider mb-4">
-                STEP {{ activeStep }}
+              <div class="inline-flex items-center gap-3 mb-4">
+                <div class="px-3 py-1 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-[11px] font-black tracking-widest shadow-[0_4px_12px_rgba(99,102,241,0.3)]">
+                  STEP 0{{ activeStep }}
+                </div>
+                <div class="w-12 h-[2px] bg-indigo-100 rounded-full"></div>
               </div>
               <h3 class="text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight mb-4">{{ currentStepData.title }}</h3>
               <p class="text-slate-500 text-lg max-w-md">{{ currentStepData.description }}</p>

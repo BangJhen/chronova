@@ -17,7 +17,7 @@
         </p>
 
         <!-- Toggle -->
-        <div class="mt-10 flex items-center gap-4 bg-transparent">
+        <div class="mt-10 flex justify-center items-center gap-4 bg-transparent">
           <span :class="['text-sm font-semibold transition-colors', !isYearly ? 'text-slate-800' : 'text-slate-400']">Monthly</span>
           
           <button 
@@ -86,7 +86,7 @@
           <p class="text-sm text-slate-500 h-10">For professionals and small teams</p>
           
           <div class="mt-4 mb-2 flex items-baseline gap-1">
-            <span class="text-6xl font-extrabold text-slate-900 tracking-tight">${{ isYearly ? '9' : '12' }}</span>
+            <span class="text-6xl font-extrabold text-slate-900 tracking-tight">${{ animatedProPrice }}</span>
             <span class="text-sm font-semibold text-slate-400">/ user / month</span>
           </div>
           <p class="text-xs text-slate-500 mb-8 font-medium">Billed {{ isYearly ? 'annually' : 'monthly' }}</p>
@@ -119,7 +119,7 @@
           <p class="text-sm text-slate-500 h-10">For growing teams and organizations</p>
           
           <div class="mt-4 mb-2 flex items-baseline gap-1">
-            <span class="text-6xl font-extrabold text-slate-900 tracking-tight">${{ isYearly ? '19' : '24' }}</span>
+            <span class="text-6xl font-extrabold text-slate-900 tracking-tight">${{ animatedBizPrice }}</span>
             <span class="text-sm font-semibold text-slate-400">/ user / month</span>
           </div>
           <p class="text-xs text-slate-500 mb-8 font-medium">Billed {{ isYearly ? 'annually' : 'monthly' }}</p>
@@ -146,7 +146,45 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 
-const isYearly = ref(false)
+const isYearly = ref(true)
+
+const proMonthlyPrice = 12
+const proYearlyPrice = 9
+const bizMonthlyPrice = 24
+const bizYearlyPrice = 19
+
+const animatedProPrice = ref(proYearlyPrice)
+const animatedBizPrice = ref(bizYearlyPrice)
+
+const animateNumber = (refObj, start, end, duration) => {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    
+    // Ease out expo for smooth decelation
+    const easeOutExpo = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+    
+    refObj.value = Math.floor(easeOutExpo * (end - start) + start);
+    
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    } else {
+      refObj.value = end;
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+watch(isYearly, (newVal) => {
+  if (newVal) {
+    animateNumber(animatedProPrice, proMonthlyPrice, proYearlyPrice, 600)
+    animateNumber(animatedBizPrice, bizMonthlyPrice, bizYearlyPrice, 600)
+  } else {
+    animateNumber(animatedProPrice, proYearlyPrice, proMonthlyPrice, 600)
+    animateNumber(animatedBizPrice, bizYearlyPrice, bizMonthlyPrice, 600)
+  }
+})
 </script>

@@ -95,6 +95,15 @@
     <!-- Features Section -->
     <Features />
 
+    <!-- Glowing Section Divider -->
+    <div class="w-full h-px relative z-20 flex justify-center items-center bg-slate-200/80">
+      <div class="absolute w-1/2 max-w-3xl h-[2px] bg-gradient-to-r from-transparent via-indigo-500/40 to-transparent blur-[2px]"></div>
+      <div class="absolute w-1/3 max-w-lg h-px bg-gradient-to-r from-transparent via-indigo-400/80 to-transparent shadow-[0_0_8px_rgba(99,102,241,0.8)]"></div>
+    </div>
+
+    <!-- Pricing Section -->
+    <Pricing />
+
     <!-- Footer (Light Theme) -->
     <footer class="border-t border-slate-200 py-12 px-4 mt-12 bg-white/50 relative z-10">
       <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">

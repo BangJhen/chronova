@@ -22,15 +22,21 @@
           
           <button 
             @click="isYearly = !isYearly"
-            class="relative inline-flex h-7 w-14 items-center rounded-full bg-indigo-500 transition-colors focus:outline-none shadow-inner"
+            :class="[
+              'relative inline-flex h-7 w-14 items-center rounded-full transition-colors focus:outline-none shadow-inner',
+              isYearly ? 'bg-indigo-500' : 'bg-white border border-slate-200'
+            ]"
           >
             <span 
-              :class="['inline-block h-5 w-5 transform rounded-full bg-white transition-transform shadow-sm', isYearly ? 'translate-x-8' : 'translate-x-1']"
+              :class="[
+                'inline-block h-5 w-5 transform rounded-full transition-transform shadow-sm', 
+                isYearly ? 'translate-x-8 bg-white' : 'translate-x-1 bg-indigo-500'
+              ]"
             ></span>
           </button>
           
           <div class="flex items-center gap-2">
-            <span :class="['text-sm font-semibold transition-colors', isYearly ? 'text-slate-800' : 'text-slate-400']">Yearly</span>
+            <span :class="['text-sm font-semibold transition-colors', isYearly ? 'text-slate-800' : 'text-slate-400']">Annually</span>
             <span class="px-2.5 py-1 rounded-full bg-indigo-50 text-[10px] font-bold text-indigo-600 border border-indigo-100 uppercase tracking-wider">Save 20%</span>
           </div>
         </div>
@@ -164,10 +170,8 @@ const animateNumber = (refObj, start, end, duration) => {
     if (!startTimestamp) startTimestamp = timestamp;
     const progress = Math.min((timestamp - startTimestamp) / duration, 1);
     
-    // Ease out expo for smooth decelation
-    const easeOutExpo = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-    
-    refObj.value = Math.floor(easeOutExpo * (end - start) + start);
+    // Linear progression for constant speed
+    refObj.value = Math.floor(progress * (end - start) + start);
     
     if (progress < 1) {
       window.requestAnimationFrame(step);
@@ -180,11 +184,11 @@ const animateNumber = (refObj, start, end, duration) => {
 
 watch(isYearly, (newVal) => {
   if (newVal) {
-    animateNumber(animatedProPrice, proMonthlyPrice, proYearlyPrice, 600)
-    animateNumber(animatedBizPrice, bizMonthlyPrice, bizYearlyPrice, 600)
+    animateNumber(animatedProPrice, proMonthlyPrice, proYearlyPrice, 1000)
+    animateNumber(animatedBizPrice, bizMonthlyPrice, bizYearlyPrice, 1000)
   } else {
-    animateNumber(animatedProPrice, proYearlyPrice, proMonthlyPrice, 600)
-    animateNumber(animatedBizPrice, bizYearlyPrice, bizMonthlyPrice, 600)
+    animateNumber(animatedProPrice, proYearlyPrice, proMonthlyPrice, 1000)
+    animateNumber(animatedBizPrice, bizYearlyPrice, bizMonthlyPrice, 1000)
   }
 })
 </script>

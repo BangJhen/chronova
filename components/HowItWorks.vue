@@ -116,7 +116,7 @@
                 <!-- STEP 1 CONTENT -->
                 <template v-if="activeStep === 1">
                   <!-- Left Mini Cards -->
-                  <div class="flex flex-col justify-center gap-4 w-full md:w-1/3">
+                  <div class="flex flex-col justify-center gap-4 w-full md:w-1/3 transform origin-top-left scale-[0.85]">
                     <div class="bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-white shadow-sm flex flex-col">
                       <div class="w-10 h-10 rounded-full bg-indigo-50 flex items-center justify-center mb-3 text-indigo-500">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
@@ -135,7 +135,7 @@
                   </div>
 
                   <!-- Right Mockup Card -->
-                  <div class="w-full md:w-2/3 flex items-center justify-end relative">
+                  <div class="w-full md:w-2/3 flex items-center justify-end relative transform origin-top-right scale-[0.85]">
                     <div class="w-full max-w-[350px] bg-white/80 backdrop-blur-xl rounded-[1.5rem] p-6 border border-white shadow-[0_15px_50px_-10px_rgba(0,0,0,0.1)] relative z-10">
                       <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center mb-4 text-indigo-500 shadow-sm border border-indigo-100/50">
                         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -187,7 +187,7 @@
 
                 <!-- STEP 2 CONTENT -->
                 <template v-else-if="activeStep === 2">
-                  <div class="flex flex-col justify-center gap-4 w-full md:w-1/3">
+                  <div class="flex flex-col justify-center gap-4 w-full md:w-1/3 transform origin-top-left scale-[0.85]">
                     <div class="bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-white shadow-sm flex flex-col">
                       <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mb-3 text-blue-500">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
@@ -204,7 +204,7 @@
                     </div>
                   </div>
                   
-                  <div class="w-full md:w-2/3 flex items-center justify-end relative">
+                  <div class="w-full md:w-2/3 flex items-center justify-end relative transform origin-top-right scale-[0.85]">
                     <div class="w-full max-w-[380px] bg-white/80 backdrop-blur-xl rounded-[2rem] p-6 border border-white shadow-[0_15px_50px_-10px_rgba(0,0,0,0.1)] relative z-10">
                       <div class="flex items-center justify-between mb-6">
                         <h4 class="text-lg font-bold text-slate-800">Task Backlog</h4>
@@ -236,7 +236,7 @@
 
                 <!-- STEP 3 CONTENT -->
                 <template v-else-if="activeStep === 3">
-                  <div class="flex flex-col justify-center gap-4 w-full md:w-1/3">
+                  <div class="flex flex-col justify-center gap-4 w-full md:w-1/3 transform origin-top-left scale-[0.85]">
                     <div class="bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-white shadow-sm flex flex-col">
                       <div class="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center mb-3 text-teal-500">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -246,7 +246,7 @@
                     </div>
                   </div>
                   
-                  <div class="w-full md:w-2/3 flex items-center justify-end relative">
+                  <div class="w-full md:w-2/3 flex items-center justify-end relative transform origin-top-right scale-[0.85]">
                     <div class="w-full max-w-[380px] bg-white/80 backdrop-blur-xl rounded-[2rem] p-6 border border-white shadow-[0_15px_50px_-10px_rgba(0,0,0,0.1)] relative z-10">
                       <h4 class="text-lg font-bold text-slate-800 mb-2">AI Generation</h4>
                       <p class="text-xs text-slate-500 mb-4">Building optimal sprint plan...</p>
@@ -273,7 +273,7 @@
 
                 <!-- STEP 4 CONTENT -->
                 <template v-else-if="activeStep === 4">
-                  <div class="flex flex-col justify-center gap-4 w-full md:w-1/3">
+                  <div class="flex flex-col justify-center gap-4 w-full md:w-1/3 transform origin-top-left scale-[0.85]">
                     <div class="bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-white shadow-sm flex flex-col">
                       <div class="w-10 h-10 rounded-full bg-purple-50 flex items-center justify-center mb-3 text-purple-500">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
@@ -283,7 +283,7 @@
                     </div>
                   </div>
                   
-                  <div class="w-full md:w-2/3 flex items-center justify-end relative">
+                  <div class="w-full md:w-2/3 flex items-center justify-end relative transform origin-top-right scale-[0.85]">
                     <div class="w-full max-w-[380px] bg-white/80 backdrop-blur-xl rounded-[2rem] p-6 border border-white shadow-[0_15px_50px_-10px_rgba(0,0,0,0.1)] relative z-10">
                       <h4 class="text-lg font-bold text-slate-800 mb-6">Sprint Progress</h4>
                       <div class="flex items-end gap-2 h-32 mb-4">

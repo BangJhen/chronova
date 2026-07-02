@@ -4,7 +4,7 @@
     <DashboardSidebar />
     
     <!-- Main Content Wrapper (offset by sidebar width) -->
-    <div class="flex-1 ml-[280px] flex flex-col min-h-screen">
+    <div class="flex-1 ml-[240px] flex flex-col min-h-screen">
       <!-- Topbar (sticky, spans remaining width) -->
       <DashboardTopbar class="ml-0" />
       

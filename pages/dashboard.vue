@@ -9,10 +9,10 @@
     </div>
 
     <!-- Main Grid -->
-    <div class="grid grid-cols-1 xl:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
       
       <!-- Left Content (Stats, Kanban, Bottom sections) -->
-      <div class="xl:col-span-3 space-y-8 flex flex-col min-h-0">
+      <div class="lg:col-span-3 space-y-8 flex flex-col min-h-0">
         
         <!-- Stat Cards -->
         <DashboardStatCards />
@@ -29,7 +29,7 @@
       </div>
 
       <!-- Right Panel -->
-      <div class="xl:col-span-1">
+      <div class="lg:col-span-1">
         <DashboardRightPanel />
       </div>
 

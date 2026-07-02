@@ -31,18 +31,18 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5 w-full max-w-5xl mx-auto">
 
         <!-- ===== CARD 1: AI Task Generation ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[280px] lg:h-[300px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[270px] lg:h-[280px] overflow-hidden">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-indigo-500" viewBox="0 0 24 24" fill="currentColor">
+              <div class="w-14 h-14 rounded-3xl bg-white/90 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-white flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-indigo-500" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2l2.4 7.6 7.6 2.4-7.6 2.4L12 22l-2.4-7.6-7.6-2.4 7.6-2.4L12 2z"/>
                 </svg>
               </div>
               <div>
-                <h3 class="text-base font-semibold text-slate-800">AI Task Generation</h3>
-                <p class="text-xs text-slate-500 mt-0.5 leading-snug max-w-[200px]">Turn natural language into structured<br/>tasks with subtasks, owners,<br/>and due dates.</p>
+                <h3 class="text-base font-bold text-slate-800">AI Task Generation</h3>
+                <p class="text-[13px] text-slate-500 mt-1 leading-relaxed max-w-[280px]">Turn natural language into structured<br/>tasks with subtasks, owners, and due dates.</p>
               </div>
             </div>
             <svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="currentColor">
@@ -75,18 +75,18 @@
         </div>
 
         <!-- ===== CARD 2: Smart Scheduling ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[280px] lg:h-[300px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[270px] lg:h-[280px] overflow-hidden">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-14 h-14 rounded-3xl bg-white/90 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-white flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                 </svg>
               </div>
               <div>
-                <h3 class="text-base font-semibold text-slate-800">Smart Scheduling</h3>
-                <p class="text-xs text-slate-500 mt-0.5 leading-snug max-w-[200px]">AI finds the best time for your deep work,<br/>meetings, and important deadlines.</p>
+                <h3 class="text-base font-bold text-slate-800">Smart Scheduling</h3>
+                <p class="text-[13px] text-slate-500 mt-1 leading-relaxed max-w-[280px]">AI finds the best time for your deep work,<br/>meetings, and important deadlines.</p>
               </div>
             </div>
             <svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="currentColor">
@@ -172,19 +172,19 @@
         </div>
 
         <!-- ===== CARD 3: Focus Recommendations ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[280px] lg:h-[300px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[270px] lg:h-[280px] overflow-hidden">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-rose-100 to-orange-100 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-14 h-14 rounded-3xl bg-white/90 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-white flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="3" stroke-width="2"/>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m10.72 10.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
                 </svg>
               </div>
               <div>
-                <h3 class="text-base font-semibold text-slate-800">Focus Recommendations</h3>
-                <p class="text-xs text-slate-500 mt-0.5 leading-snug max-w-[200px]">AI analyzes your context and surfaces<br/>what will drive the most impact today.</p>
+                <h3 class="text-base font-bold text-slate-800">Focus Recommendations</h3>
+                <p class="text-[13px] text-slate-500 mt-1 leading-relaxed max-w-[280px]">AI analyzes your context and surfaces<br/>what will drive the most impact today.</p>
               </div>
             </div>
             <svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="currentColor">
@@ -264,18 +264,18 @@
         </div>
 
         <!-- ===== CARD 4: Motion-first Kanban ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[280px] lg:h-[300px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[270px] lg:h-[280px] overflow-hidden">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-100 to-cyan-100 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-14 h-14 rounded-3xl bg-white/90 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-white flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                 </svg>
               </div>
               <div>
-                <h3 class="text-base font-semibold text-slate-800">Motion-first Kanban</h3>
-                <p class="text-xs text-slate-500 mt-0.5 leading-snug max-w-[200px]">A fluid, drag-and-drop Kanban that<br/>keeps work moving with clarity.</p>
+                <h3 class="text-base font-bold text-slate-800">Motion-first Kanban</h3>
+                <p class="text-[13px] text-slate-500 mt-1 leading-relaxed max-w-[280px]">A fluid, drag-and-drop Kanban that<br/>keeps work moving with clarity.</p>
               </div>
             </div>
             <svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="currentColor">

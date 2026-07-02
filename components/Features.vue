@@ -31,7 +31,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5 w-full max-w-5xl mx-auto">
 
         <!-- ===== CARD 1: AI Task Generation ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[270px] lg:h-[280px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
@@ -75,7 +75,7 @@
         </div>
 
         <!-- ===== CARD 2: Smart Scheduling ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[270px] lg:h-[280px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
@@ -172,7 +172,7 @@
         </div>
 
         <!-- ===== CARD 3: Focus Recommendations ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[270px] lg:h-[280px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
@@ -264,7 +264,7 @@
         </div>
 
         <!-- ===== CARD 4: Motion-first Kanban ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[270px] lg:h-[280px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">

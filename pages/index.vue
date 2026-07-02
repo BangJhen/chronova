@@ -113,41 +113,8 @@
     <!-- FAQ Section -->
     <Faq />
 
-    <!-- Footer (Light Theme) -->
-    <footer class="border-t border-slate-200 py-12 px-4 bg-white/50 relative z-10">
-      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <h4 class="font-bold mb-4 text-slate-900">CHRONOVA</h4>
-          <p class="text-sm text-slate-500">Plan smarter. Move faster.</p>
-        </div>
-        <div>
-          <h4 class="font-bold mb-4 text-slate-900">Produk</h4>
-          <ul class="space-y-3 text-sm text-slate-500">
-            <li><a href="#" class="hover:text-indigo-600 transition-colors">Fitur</a></li>
-            <li><a href="#" class="hover:text-indigo-600 transition-colors">Harga</a></li>
-            <li><a href="#" class="hover:text-indigo-600 transition-colors">Integrasi</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-bold mb-4 text-slate-900">Perusahaan</h4>
-          <ul class="space-y-3 text-sm text-slate-500">
-            <li><a href="#" class="hover:text-indigo-600 transition-colors">Tentang Kami</a></li>
-            <li><a href="#" class="hover:text-indigo-600 transition-colors">Karir</a></li>
-            <li><a href="#" class="hover:text-indigo-600 transition-colors">Blog</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-bold mb-4 text-slate-900">Legal</h4>
-          <ul class="space-y-3 text-sm text-slate-500">
-            <li><a href="#" class="hover:text-indigo-600 transition-colors">Terms of Service</a></li>
-            <li><a href="#" class="hover:text-indigo-600 transition-colors">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="max-w-5xl mx-auto mt-12 pt-8 border-t border-slate-200 text-center text-sm text-slate-500">
-        &copy; 2026 Chronova Inc. All rights reserved.
-      </div>
-    </footer>
+    <!-- Footer -->
+    <Footer />
   </div>
 </template>
 

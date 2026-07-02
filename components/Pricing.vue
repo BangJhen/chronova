@@ -92,12 +92,7 @@
           <p class="text-sm text-slate-500 h-10">For professionals and small teams</p>
           
           <div class="mt-4 mb-2 flex items-baseline gap-1">
-            <span class="text-6xl font-extrabold text-slate-900 tracking-tight inline-flex">
-              $
-              <Transition name="slide-down" mode="out-in">
-                <span :key="isYearly ? 'yearly' : 'monthly'" class="inline-block min-w-[1.2em] text-left">{{ isYearly ? '9' : '12' }}</span>
-              </Transition>
-            </span>
+            <span class="text-6xl font-extrabold text-slate-900 tracking-tight">${{ animatedProPrice }}</span>
             <span class="text-sm font-semibold text-slate-400">/ user / month</span>
           </div>
           <p class="text-xs text-slate-500 mb-8 font-medium">Billed {{ isYearly ? 'annually' : 'monthly' }}</p>
@@ -130,12 +125,7 @@
           <p class="text-sm text-slate-500 h-10">For growing teams and organizations</p>
           
           <div class="mt-4 mb-2 flex items-baseline gap-1">
-            <span class="text-6xl font-extrabold text-slate-900 tracking-tight inline-flex">
-              $
-              <Transition name="slide-down" mode="out-in">
-                <span :key="isYearly ? 'yearly' : 'monthly'" class="inline-block min-w-[1.2em] text-left">{{ isYearly ? '19' : '24' }}</span>
-              </Transition>
-            </span>
+            <span class="text-6xl font-extrabold text-slate-900 tracking-tight">${{ animatedBizPrice }}</span>
             <span class="text-sm font-semibold text-slate-400">/ user / month</span>
           </div>
           <p class="text-xs text-slate-500 mb-8 font-medium">Billed {{ isYearly ? 'annually' : 'monthly' }}</p>
@@ -162,22 +152,43 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 
 const isYearly = ref(true)
-</script>
 
-<style scoped>
-.slide-down-enter-active,
-.slide-down-leave-active {
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+const proMonthlyPrice = 12
+const proYearlyPrice = 9
+const bizMonthlyPrice = 24
+const bizYearlyPrice = 19
+
+const animatedProPrice = ref(proYearlyPrice)
+const animatedBizPrice = ref(bizYearlyPrice)
+
+const animateNumber = (refObj, start, end, duration) => {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    
+    // Linear progression for constant speed
+    refObj.value = Math.floor(progress * (end - start) + start);
+    
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    } else {
+      refObj.value = end;
+    }
+  };
+  window.requestAnimationFrame(step);
 }
-.slide-down-enter-from {
-  opacity: 0;
-  transform: translateY(-25px);
-}
-.slide-down-leave-to {
-  opacity: 0;
-  transform: translateY(25px);
-}
-</style>
+
+watch(isYearly, (newVal) => {
+  if (newVal) {
+    animateNumber(animatedProPrice, proMonthlyPrice, proYearlyPrice, 1000)
+    animateNumber(animatedBizPrice, bizMonthlyPrice, bizYearlyPrice, 1000)
+  } else {
+    animateNumber(animatedProPrice, proYearlyPrice, proMonthlyPrice, 1000)
+    animateNumber(animatedBizPrice, bizYearlyPrice, bizMonthlyPrice, 1000)
+  }
+})
+</script>

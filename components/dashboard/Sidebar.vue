@@ -1,9 +1,9 @@
 <template>
   <aside class="w-[240px] h-screen bg-[#fcfdff] border-r border-slate-200 flex flex-col fixed left-0 top-0 font-sans z-40">
     <!-- Logo -->
-    <div class="h-20 flex items-center px-6">
+    <div class="h-20 flex items-center justify-center">
       <NuxtLink to="/">
-        <img src="/logo.png" alt="Chronova" class="h-6 w-auto" />
+        <img src="/logo.png" alt="Chronova" class="h-12 w-auto" />
       </NuxtLink>
     </div>
 

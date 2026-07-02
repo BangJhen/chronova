@@ -8,11 +8,11 @@
         <svg class="w-4 h-4 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2l2.4 7.6 7.6 2.4-7.6 2.4L12 22l-2.4-7.6-7.6-2.4 7.6-2.4L12 2z"/>
         </svg>
-        <span class="text-xs font-bold tracking-wider text-indigo-800 uppercase">How It Works</span>
+        <span class="text-xs font-semibold tracking-wider text-indigo-800 uppercase">How It Works</span>
       </div>
       
       <!-- Headline -->
-      <h2 class="text-4xl md:text-5xl font-bold text-slate-800 tracking-tight mb-4">
+      <h2 class="text-4xl md:text-5xl font-semibold text-slate-800 tracking-tight mb-4">
         Get started in <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">4 simple steps</span>
       </h2>
       

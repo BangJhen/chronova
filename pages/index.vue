@@ -33,7 +33,7 @@
         </div>
 
         <!-- Headline -->
-        <h1 class="text-[2.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold mb-6 text-[#1e293b] leading-[1.15] tracking-tight max-w-5xl mx-auto">
+        <h1 class="text-[2.5rem] md:text-[3.75rem] lg:text-[4rem] font-semibold mb-6 text-[#1e293b] leading-[1.15] tracking-tight max-w-5xl mx-auto">
           Your <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#38bdf8] via-[#6366f1] to-[#a855f7]">AI-powered</span> workspace <br class="hidden md:block" />
           for tasks, time, and momentum.
         </h1>
@@ -46,12 +46,12 @@
 
         <!-- Buttons -->
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-4 w-full sm:w-auto">
-          <button class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-[#2dd4bf] via-[#3b82f6] to-[#a855f7] hover:opacity-90 transition-all duration-300 shadow-[0_8px_25px_rgba(59,130,246,0.35)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(59,130,246,0.45)]">
+          <button class="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-[#2dd4bf] via-[#3b82f6] to-[#a855f7] hover:opacity-90 transition-all duration-300 shadow-[0_8px_25px_rgba(59,130,246,0.35)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(59,130,246,0.45)]">
             Get Started Free
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
           </button>
           
-          <button class="flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-slate-800 bg-white border border-slate-100 hover:bg-slate-50 transition-all duration-300 shadow-[0_8px_25px_rgba(0,0,0,0.04)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,0,0,0.06)]">
+          <button class="flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold text-slate-800 bg-white border border-slate-100 hover:bg-slate-50 transition-all duration-300 shadow-[0_8px_25px_rgba(0,0,0,0.04)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,0,0,0.06)]">
             <div class="w-6 h-6 rounded-full border border-slate-200 flex items-center justify-center bg-white shadow-sm">
               <svg class="w-3 h-3 text-indigo-600 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
             </div>

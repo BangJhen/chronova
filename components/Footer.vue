@@ -63,15 +63,6 @@
       <p class="text-sm text-slate-400">
         &copy; {{ new Date().getFullYear() }} Chronova Inc. All rights reserved.
       </p>
-      <div class="flex items-center gap-6 text-sm text-slate-400">
-        <span class="flex items-center gap-1.5">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-          </span>
-          All systems normal
-        </span>
-      </div>
     </div>
   </footer>
 </template>

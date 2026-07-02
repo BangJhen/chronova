@@ -73,7 +73,7 @@
     </div>
 
     <!-- How It Works Section -->
-    <section class="relative z-10 w-full bg-[#f8f9fc]">
+    <section id="how-it-works" class="relative z-10 w-full bg-[#f8f9fc]">
       <!-- Localized sticky background -->
       <div class="absolute inset-0 w-full h-full z-0 pointer-events-none">
         <div class="sticky top-0 w-full h-screen overflow-hidden">
@@ -93,7 +93,7 @@
     </div>
 
     <!-- Features Section -->
-    <Features />
+    <Features id="features" />
 
     <!-- Glowing Section Divider -->
     <div class="w-full h-px relative z-20 flex justify-center items-center bg-slate-200/80">
@@ -102,7 +102,7 @@
     </div>
 
     <!-- Pricing Section -->
-    <Pricing />
+    <Pricing id="pricing" />
 
     <!-- Glowing Section Divider -->
     <div class="w-full h-px relative z-20 flex justify-center items-center bg-slate-200/80">
@@ -111,7 +111,7 @@
     </div>
 
     <!-- FAQ Section -->
-    <Faq />
+    <Faq id="faq" />
 
     <!-- Footer -->
     <Footer />

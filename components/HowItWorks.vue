@@ -1,7 +1,7 @@
 <template>
   <div class="w-full relative z-10">
     <!-- Header Section (Normal scroll) -->
-    <div class="flex flex-col items-center text-center py-16 px-4 md:px-8 font-sans">
+    <div class="flex flex-col items-center text-center pt-12 pb-4 px-4 md:px-8 font-sans">
       <!-- Badge -->
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-100 bg-white/50 backdrop-blur-md mb-6 shadow-sm">
         <svg class="w-4 h-4 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
@@ -24,7 +24,7 @@
 
     <!-- Scroll-driven Sticky Section -->
     <div ref="containerRef" class="w-full relative" style="height: 400vh;">
-      <div class="sticky top-0 w-full h-screen flex flex-col items-center justify-center py-8 px-4 md:px-8 font-sans overflow-hidden">
+      <div class="sticky top-16 lg:top-24 w-full flex flex-col items-center py-4 px-4 md:px-8 font-sans overflow-visible">
         
         <!-- Main Content Grid -->
         <div class="w-full max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-8">
@@ -322,7 +322,7 @@
   </div>
 
     <!-- Built for teams section -->
-    <div class="w-full max-w-5xl mx-auto relative group mt-16 px-4 md:px-8 pb-24">
+    <div class="w-full max-w-5xl mx-auto relative group mt-8 px-4 md:px-8 pb-24">
       <!-- Liquid glass effect: glowing background blob -->
       <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-300 to-purple-300 rounded-[2.5rem] blur-xl opacity-30 group-hover:opacity-60 transition duration-1000"></div>
       

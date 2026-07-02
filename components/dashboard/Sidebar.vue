@@ -3,7 +3,7 @@
     <!-- Logo -->
     <div class="h-20 flex items-center justify-center">
       <NuxtLink to="/">
-        <img src="/logo.png" alt="Chronova" class="h-12 w-auto" />
+        <img src="/logo.png" alt="Chronova" class="h-8 w-auto" />
       </NuxtLink>
     </div>
 

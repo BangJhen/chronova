@@ -80,7 +80,7 @@
     </div>
 
     <!-- How It Works Section -->
-    <section class="relative z-10 w-full bg-[url('/how-it-works-background.png')] bg-cover bg-center bg-no-repeat bg-[#f8f9fc]">
+    <section class="relative z-10 w-full bg-[url('/how-it-works-background.png')] bg-cover bg-center bg-fixed bg-no-repeat bg-[#f8f9fc]">
       <!-- Subtle overlay for text readability -->
       <div class="absolute inset-0 bg-white/40 z-0"></div>
       

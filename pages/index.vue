@@ -88,30 +88,8 @@
       <HowItWorks />
     </section>
 
-    <!-- Features Section (Light Theme) -->
-    <section class="py-20 px-4 bg-white/50 relative z-10">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Fitur Utama</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="p-8 border border-slate-100 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-slate-800">Real-time Analytics</h3>
-            <p class="text-slate-500 leading-relaxed">Pantau semua metrik penting Anda secara langsung tanpa delay.</p>
-          </div>
-          <div class="p-8 border border-slate-100 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-slate-800">Keamanan Terjamin</h3>
-            <p class="text-slate-500 leading-relaxed">Data Anda dienkripsi dengan standar keamanan industri terbaik.</p>
-          </div>
-          <div class="p-8 border border-slate-100 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-slate-800">Kolaborasi Tim</h3>
-            <p class="text-slate-500 leading-relaxed">Undang anggota tim dan atur role dengan mudah.</p>
-          </div>
-          <div class="p-8 border border-slate-100 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-slate-800">Laporan Otomatis</h3>
-            <p class="text-slate-500 leading-relaxed">Jadwalkan laporan harian atau mingguan ke email Anda.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Features Section -->
+    <Features />
 
     <!-- Footer (Light Theme) -->
     <footer class="border-t border-slate-200 py-12 px-4 mt-12 bg-white/50 relative z-10">

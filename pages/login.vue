@@ -1,13 +1,17 @@
 <template>
-  <div class="min-h-screen bg-[#f8f9fc] flex items-center justify-center p-4 font-sans">
+  <div class="min-h-screen bg-[#f8f9fc] flex items-center justify-center p-4 font-sans relative">
+    
+    <!-- Return to Home Button -->
+    <NuxtLink to="/" class="absolute top-6 left-6 md:top-10 md:left-10 flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-indigo-600 transition-colors bg-white/50 hover:bg-white px-4 py-2 rounded-full border border-slate-200 shadow-sm backdrop-blur-sm z-50">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+      Return to Home
+    </NuxtLink>
+
     <div class="max-w-md w-full bg-white rounded-3xl shadow-xl shadow-indigo-100/50 p-8 border border-slate-100 relative overflow-hidden">
       <!-- Glow effect -->
       <div class="absolute -top-24 -right-24 w-48 h-48 bg-indigo-500/10 blur-[50px] rounded-full pointer-events-none"></div>
 
       <div class="text-center mb-8 relative z-10">
-        <NuxtLink to="/" class="inline-block mb-4">
-          <img src="/logo.png" alt="Chronova Logo" class="h-10 w-auto mx-auto drop-shadow-sm" />
-        </NuxtLink>
         <h1 class="text-2xl font-bold text-slate-900 mb-2 tracking-tight">Welcome back</h1>
         <p class="text-sm text-slate-500">Enter your details to sign in to your account</p>
       </div>

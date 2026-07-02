@@ -319,6 +319,7 @@
       </div>
       </div>
     </div>
+  </div>
 
     <!-- Built for teams section -->
     <div class="w-full max-w-5xl mx-auto relative group mt-16 px-4 md:px-8 pb-24">
@@ -370,7 +371,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
   </div>
 </template>

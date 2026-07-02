@@ -59,12 +59,6 @@
           </button>
         </div>
 
-        <!-- Trust Indicator -->
-        <div class="flex items-center justify-center gap-2 text-sm text-slate-500 font-medium mb-4">
-          <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-          No credit card required
-        </div>
-
         <!-- Demo Image -->
         <div class="max-w-5xl mx-auto relative z-20 flex justify-center mt-8">
           <img src="/demo-image.png" alt="Chronova Demo" class="w-full h-auto drop-shadow-[0_20px_40px_rgba(99,102,241,0.2)]" />
@@ -80,12 +74,17 @@
     </div>
 
     <!-- How It Works Section -->
-    <section class="relative z-10 w-full bg-[url('/how-it-works-background.png')] bg-cover bg-center bg-fixed bg-no-repeat bg-[#f8f9fc]">
-      <!-- Subtle overlay for text readability -->
-      <div class="absolute inset-0 bg-white/40 z-0"></div>
+    <section class="relative z-10 w-full bg-[#f8f9fc]">
+      <!-- Localized sticky background -->
+      <div class="absolute inset-0 w-full h-full z-0 pointer-events-none">
+        <div class="sticky top-0 w-full h-screen overflow-hidden">
+          <div class="absolute inset-0 bg-[url('/how-it-works-background.png')] bg-cover bg-center"></div>
+          <div class="absolute inset-0 bg-white/40"></div>
+        </div>
+      </div>
       
       <!-- The new complex How It Works Component -->
-      <HowItWorks />
+      <HowItWorks class="relative z-10" />
     </section>
 
     <!-- Glowing Section Divider -->

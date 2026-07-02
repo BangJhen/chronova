@@ -88,6 +88,13 @@
       <HowItWorks />
     </section>
 
+    <!-- Glowing Section Divider -->
+    <div class="w-full h-px relative z-20 flex justify-center items-center">
+      <div class="absolute w-full h-px bg-gradient-to-r from-transparent via-slate-200/60 to-transparent"></div>
+      <div class="absolute w-1/2 max-w-3xl h-[2px] bg-gradient-to-r from-transparent via-indigo-500/40 to-transparent blur-[2px]"></div>
+      <div class="absolute w-1/3 max-w-lg h-px bg-gradient-to-r from-transparent via-indigo-400/80 to-transparent shadow-[0_0_8px_rgba(99,102,241,0.8)]"></div>
+    </div>
+
     <!-- Features Section -->
     <Features />
 

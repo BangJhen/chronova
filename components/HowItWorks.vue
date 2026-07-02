@@ -41,7 +41,7 @@
             <!-- Number Circle -->
             <div class="relative z-10 mt-3 hidden lg:flex items-center justify-center w-12 h-12 flex-shrink-0">
               <!-- Active Halo -->
-              <div v-if="activeStep === step.id" class="absolute inset-[-6px] bg-white/90 backdrop-blur-md rounded-full shadow-[0_0_20px_rgba(99,102,241,0.3)] z-0 border border-indigo-50"></div>
+              <div v-if="activeStep === step.id" class="absolute inset-[-3px] bg-white/90 backdrop-blur-md rounded-full shadow-[0_0_20px_rgba(99,102,241,0.3)] z-0 border border-indigo-50"></div>
               
               <!-- Inner Circle -->
               <div :class="[

@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full h-full flex flex-col items-center pt-8 pb-16 px-4 md:px-8 font-sans relative z-10">
+  <div ref="containerRef" class="w-full relative" style="height: 400vh;">
+    <!-- Sticky Wrapper that stays on screen while scrolling the 400vh height -->
+    <div class="sticky top-0 w-full h-screen flex flex-col items-center justify-center py-12 px-4 md:px-8 font-sans z-10 overflow-hidden">
     
     <!-- Header Section -->
     <div class="flex flex-col items-center text-center mb-16">
@@ -369,12 +371,49 @@
       </div>
     </div>
   </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 
+const containerRef = ref(null)
 const activeStep = ref(1)
+
+const handleScroll = () => {
+  if (!containerRef.value) return
+  
+  const rect = containerRef.value.getBoundingClientRect()
+  // Calculate how far the container has scrolled relative to the viewport
+  // rect.top is 0 when the top of container hits the top of viewport.
+  // We want to track progress from rect.top = 0 to rect.bottom = window.innerHeight
+  const maxScroll = rect.height - window.innerHeight
+  const scrollProgress = -rect.top / maxScroll
+  
+  if (scrollProgress < 0) {
+    activeStep.value = 1
+  } else if (scrollProgress > 1) {
+    activeStep.value = 4
+  } else {
+    // scrollProgress is between 0 and 1
+    // Map to 4 steps: 0-0.25 -> step 1, 0.25-0.5 -> step 2, etc.
+    const stepIndex = Math.floor(scrollProgress * 4)
+    const boundedIndex = Math.max(0, Math.min(3, stepIndex))
+    activeStep.value = steps[boundedIndex].id
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll, { passive: true })
+  // Initial check in case user loads page already scrolled
+  handleScroll()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 
 const steps = [
   {

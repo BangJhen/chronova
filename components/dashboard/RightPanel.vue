@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-white border-l border-slate-200 min-h-screen flex flex-col pt-2 -mt-8 -mb-8 -mr-8 px-6 lg:px-8 pb-8">
+  <div class="flex flex-col gap-6 h-full">
     
     <!-- Today's Schedule -->
-    <div class="mt-8 mb-10">
+    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
       <div class="flex items-center justify-between mb-6">
         <h3 class="font-bold text-slate-900 flex items-center gap-2">
           <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
@@ -85,10 +85,8 @@
       </button>
     </div>
 
-    <div class="w-full h-px bg-slate-100 mb-8"></div>
-
     <!-- AI Copilot -->
-    <div class="mb-10">
+    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
       <div class="flex items-center gap-2 mb-4">
         <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
         <h3 class="font-bold text-slate-900">AI Copilot</h3>
@@ -138,7 +136,7 @@
     </div>
 
     <!-- Focus Timer -->
-    <div class="mt-auto">
+    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col flex-1">
       <h3 class="font-bold text-slate-900 mb-6">Focus Timer</h3>
       
       <div class="flex justify-center mb-6">

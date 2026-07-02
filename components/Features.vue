@@ -31,7 +31,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5 w-full max-w-5xl mx-auto">
 
         <!-- ===== CARD 1: AI Task Generation ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden group cursor-pointer">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
@@ -51,7 +51,7 @@
           </div>
 
           <!-- Mockup -->
-          <div class="flex-grow flex flex-col justify-center gap-4">
+          <div class="flex-grow flex flex-col justify-center gap-4 transform transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] translate-x-16 translate-y-16 opacity-40 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100">
             <!-- Input bar -->
             <div class="flex items-center gap-3 bg-white border border-slate-200 rounded-2xl px-4 py-3 shadow-sm">
               <svg class="w-4 h-4 text-indigo-400 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -75,7 +75,7 @@
         </div>
 
         <!-- ===== CARD 2: Smart Scheduling ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden group cursor-pointer">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
@@ -95,7 +95,7 @@
           </div>
 
           <!-- Mockup: Calendar + Schedule -->
-          <div class="flex-grow flex gap-3 overflow-hidden">
+          <div class="flex-grow flex gap-3 overflow-hidden transform transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] translate-x-16 translate-y-16 opacity-40 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100">
             <!-- Mini Calendar -->
             <div class="bg-white/80 rounded-xl border border-slate-100 p-3 flex-shrink-0 w-[155px]">
               <div class="flex items-center justify-between mb-2">
@@ -172,7 +172,7 @@
         </div>
 
         <!-- ===== CARD 3: Focus Recommendations ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden group cursor-pointer">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
@@ -193,7 +193,7 @@
           </div>
 
           <!-- Mockup: Score + List -->
-          <div class="flex-grow flex gap-4 overflow-hidden">
+          <div class="flex-grow flex gap-4 overflow-hidden transform transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] translate-x-16 translate-y-16 opacity-40 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100">
             <!-- Left: Score -->
             <div class="w-[120px] flex-shrink-0 flex flex-col justify-between">
               <div>
@@ -264,7 +264,7 @@
         </div>
 
         <!-- ===== CARD 4: Motion-first Kanban ===== -->
-        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden">
+        <div class="bg-white/70 backdrop-blur-xl rounded-[2rem] border border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] p-6 flex flex-col h-[300px] lg:h-[320px] overflow-hidden group cursor-pointer">
           <!-- Top -->
           <div class="flex items-start justify-between mb-3">
             <div class="flex items-center gap-4">
@@ -284,7 +284,7 @@
           </div>
 
           <!-- Mockup: Kanban Board -->
-          <div class="flex-grow flex gap-2 overflow-hidden">
+          <div class="flex-grow flex gap-2 overflow-hidden transform transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] translate-x-16 translate-y-16 opacity-40 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100">
             <!-- Backlog -->
             <div class="flex-1 flex flex-col gap-1.5 min-w-0">
               <div class="flex items-center gap-1.5 mb-1">

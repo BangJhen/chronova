@@ -90,7 +90,7 @@
       <!-- Right Column: Step Detail UI Mockup -->
       <div class="w-full flex-1 min-w-0 relative mt-4 lg:mt-0">
         <!-- Main Glass Panel -->
-        <div class="w-full h-full bg-white/30 backdrop-blur-xl rounded-[2.5rem] border border-white/60 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] p-8 lg:p-12 relative overflow-hidden">
+        <div class="w-full h-auto lg:h-[550px] bg-white/30 backdrop-blur-xl rounded-[2.5rem] border border-white/60 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] p-8 lg:p-12 relative overflow-hidden">
           
           <!-- Decorative Background Gradients -->
           <div class="absolute top-0 right-0 w-64 h-64 bg-purple-200/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
@@ -136,28 +136,28 @@
 
                   <!-- Right Mockup Card -->
                   <div class="w-full md:w-2/3 flex items-center justify-end relative">
-                    <div class="w-full max-w-[380px] bg-white/80 backdrop-blur-xl rounded-[2rem] p-8 border border-white shadow-[0_15px_50px_-10px_rgba(0,0,0,0.1)] relative z-10">
-                      <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 text-indigo-500 shadow-sm border border-indigo-100/50">
-                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <div class="w-full max-w-[350px] bg-white/80 backdrop-blur-xl rounded-[1.5rem] p-6 border border-white shadow-[0_15px_50px_-10px_rgba(0,0,0,0.1)] relative z-10">
+                      <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center mb-4 text-indigo-500 shadow-sm border border-indigo-100/50">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M12 2L15 9l7 3-7 3-3 7-3-7-7-3 7-3z" fill="currentColor" class="text-indigo-200" stroke="none" />
                         </svg>
                       </div>
                       
-                      <h4 class="text-xl font-bold text-slate-800 mb-6">Create Workspace</h4>
+                      <h4 class="text-lg font-bold text-slate-800 mb-4">Create Workspace</h4>
                       
-                      <div class="space-y-5">
+                      <div class="space-y-4">
                         <!-- Form Group 1 -->
                         <div>
-                          <label class="block text-xs font-semibold text-slate-500 mb-2">Workspace name</label>
-                          <input type="text" value="Chronova Team" class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-sm text-slate-800 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500/20 shadow-sm" readonly />
+                          <label class="block text-xs font-semibold text-slate-500 mb-1.5">Workspace name</label>
+                          <input type="text" value="Chronova Team" class="w-full px-3 py-2.5 bg-white border border-slate-200 rounded-lg text-sm text-slate-800 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500/20 shadow-sm" readonly />
                         </div>
                         
                         <!-- Form Group 2 -->
                         <div>
-                          <label class="block text-xs font-semibold text-slate-500 mb-2">Invite members</label>
-                          <div class="flex items-center bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
-                            <input type="text" placeholder="Enter email address..." class="flex-grow px-4 py-3 text-sm text-slate-800 focus:outline-none placeholder-slate-400 bg-transparent" readonly />
-                            <div class="px-3 py-3 border-l border-slate-200 bg-slate-50 text-xs font-medium text-slate-600 flex items-center gap-1">
+                          <label class="block text-xs font-semibold text-slate-500 mb-1.5">Invite members</label>
+                          <div class="flex items-center bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden">
+                            <input type="text" placeholder="Enter email address..." class="flex-grow px-3 py-2.5 text-sm text-slate-800 focus:outline-none placeholder-slate-400 bg-transparent" readonly />
+                            <div class="px-3 py-2.5 border-l border-slate-200 bg-slate-50 text-xs font-medium text-slate-600 flex items-center gap-1">
                               Viewer
                               <svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                             </div>
